@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    background-color: whitesmoke;
+    font-family: Yeseva One;
+    color: black;
+    text-align: center;
+    letter-spacing: 2px;
+    scroll-behavior: smooth;
+    transition: all .6s ease;
+}
+header {
+    position: sticky;
+    top: 0;
+    margin: 0;
+    background-color: blueviolet;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+header img {
+    margin-top: 10px;
+    width: 300px;
+}
+@media only screen and (min-width:100px) and (max-width:912px) and
+(orientation: portrait) {header {display: block;} header img {width: 200px;}}
+
+nav {
+    margin-top: 55px;
+    font-family: beckman;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+}
+nav a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+@media only screen and (min-width:100px) and (max-width:912px) and
+(orientation: portrait) {nav {margin-top: 0;} nav {justify-content: space-evenly;}}
+.welcome {
+    background-image: url(AceTeam\ Developers\ Banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    text-align: center;
+    justify-content: center;
+}
+.welcome h1 {
+    font-weight: bold;
+    color:black;
+    font-size: 80px;
+    margin-top: 40px;
+    text-align: center;
+    animation: spacing 4s ease infinite;
+}
+.welcome h3 {
+    color:red;
+}
+.welcome img {
+    justify-content: center;
+    justify-self: center;
+    width: 600px;
+}
+@media only screen and (min-width:100px) and (max-width:712px) and
+(orientation: portrait) {.welcome h1{font-size: 50px;margin-top: -5px;} .welcome {height: 30%;}.welcome img {width: 250px;} .welcome h3 {margin-top: -2px}}
+@keyframes spacing {
+    0%, 100% {
+        letter-spacing: 0px;
+    }
+    50% {
+        letter-spacing: 5px;
+    }
+}
+#img {
+    width: 200px;
+}
+.services {
+    background-color:rgba(216, 216, 216, 0.7);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 2px;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+}
+.services img {
+    width: 200px;
+    aspect-ratio: 2/1.7;
+}
+.services #first {
+    aspect-ratio:  1/1;
+}
+.services #inner {
+    text-align: center;
+    padding: 50px;
+}
+@media only screen and (min-width:100px) and (max-width:912px) and
+(orientation: portrait) {.services{display: block;} .services #inner {padding: 0;}}
+hr {
+    padding: 2px;
+    background-color: black;
+    margin: 20px;
+    border-radius: 20px;
+}
+::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0.26);
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.329);
+    border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+::-webkit-scrollbar:hover{
+    width: 8px;
+}
+@media only screen and (min-width:100px) and (max-width:912px) and
+(orientation: portrait) {::-webkit-scrollbar{display: none;}}
+.about-us {
+    background-color:rgba(216, 216, 216, 0.7);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 2px;  
+}
+.about-us-page {
+    background-color:rgba(216, 216, 216, 0.7);
+    border-radius: 35px;
+    margin: 10%;
+    padding: 2px;
+    border: black solid 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.about-us-page .notch {
+    background-color: black;
+    padding: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: -10px;
+    border-radius: 0px 0px 20px 20px;
+}
+.faqs {
+    background-color:rgba(216, 216, 216, 0.7);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 2px;  
+}
+.faqs-page {
+    margin-bottom: auto;
+    background-color:rgba(216, 216, 216, 0.7);
+    border-radius: 35px;
+    margin: 10%;
+    padding: 2px;
+    border: black solid 15px;
+    margin-top: auto;
+}
+.faqs-page .notch {
+    background-color: black;
+    padding: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: -10px;
+    border-radius: 0px 0px 20px 20px;
+}
+button{
+    padding: 10px;
+    background: linear-gradient(45deg, #414ba3, #0da4eb);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-family: Beckman;
+    cursor: pointer;
+}
+footer{
+    background-color: blueviolet;
+    margin: 0px;
+    padding: 2px;
+    color: white;
+    font-family: Beckman;
+}
+#business-card {
+    width: 400px;
+    border-radius: 20px;
+}
+
+#design-stox{
+    width: 400px;
+    cursor: pointer;
+}
+#ace-team{
+    width: 400px;
+    cursor: pointer;
+}
+#design-stox2{
+    width: 400px;
+    cursor: pointer;
+}
+@media only screen and (min-width:100px) and (max-width:512px) and
+(orientation:portrait) {#business-card{width: 200px; border-radius: 10px;}#design-stox{width: 250px;}#design-stox2{width: 300px;}}
+.down-side {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+@media only screen and (min-width:100px) and (max-width:912px) and
+(orientation:portrait) {footer{display: block ;}}
+.models {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: -4px;
+}
+.models img {
+    width: 700px;
+}
+@media only screen and (min-width:100px) and (max-width:512px) and
+(orientation:portrait) {.models img{width: 330px;}.down-side {display: block;}}
+@media only screen and (min-width:513px) and (max-width:912px) and
+(orientation:portrait) {.models img{width: 430px;}.down-side {display: block;}}
